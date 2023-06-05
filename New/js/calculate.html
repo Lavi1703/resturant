@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td> 1st Number:-</td>
+            <td><input type="number" id="first"></td>
+        </tr>
+        <tr>
+            <td> 2nd  Number:-</td>
+            <td><input type="number" id="sec"></td>
+        </tr>
+      
+    
+    </table>
+    <button onclick="mul()">Mul</button>
+    <button onclick="div()">Div</button>
+    <p id="result"></p>
+    <script>
+            function mul(){
+             var firstVar = document.getElementById("first").value;
+             var secondVar = document.getElementById("sec").value;
+
+             document.getElementById("result").innerHTML = firstVar * secondVar;
+            } 
+            function div(){
+             var firstVar = document.getElementById("first").value;
+             var secondVar = document.getElementById("sec").value;
+
+             document.getElementById("result").innerHTML = firstVar / secondVar;
+            } 
+    </script>
+</body>
+</html>

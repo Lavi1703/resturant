@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the first ele of an Array</title>
+</head>
+<body>
+    <script>
+      var first =  (array, n) => {
+      if (array == null) 
+      return void 0;
+    if (n == null) 
+      return array[0];
+    if (n < 0)
+      return [];
+    return array.slice(0, n);
+  };
+
+console.log(first([7, 9, 0, -2]));//7
+console.log(first([],3));//0
+console.log(first([7, 9, 0, -2],3));//7,9,0
+console.log(first([7, 9, 0, -2],6));//7,9,0,-2
+console.log(first([7, 9, 0, -2],-3));//0
+//Get the first ele of an Array
+last =  function(array, n) {
+  if (array == null) 
+    return void 0;
+  if (n == null) 
+     return array[array.length - 1];
+     return array.slice(Math.max(array.length - n, 0));  
+  };
+
+console.log(last([7, 9, 0, -2]));//-2
+console.log(last([7, 9, 0, -2],3));//9,0,-2
+console.log(last([7, 9, 0, -2],6));//7, 9, 0, -2
+
+// Array to string
+   var myColor = ["Red", "Green", "White", "Black"];
+   var result = myColor.join(",");
+   document.write(result+"<br/>");
+   var results = myColor.join("+");
+   document.write(results);
+
+//
+//even Number k bich mai - lagana hai aur baki nahi to ese hi 
+const num=window.parseInt(prompt());
+const str = num.toString();
+var result = [str[0]];
+  
+for(let x=1; x<str.length; x++)
+  {
+    if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+     {
+      result.push('-', str[x]);
+     }
+    else
+     {
+      result.push(str[x]);
+     }
+  }
+console.log(result.join(''));
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

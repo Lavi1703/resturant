@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Largest Value in an array </title>
+</head>
+<body>
+    <h3> Largest Value in an Array </h3>
+    <script>
+        // var arrayValue = [22,34,56,23,77,32];
+        // var max= arrayValue[0];
+        // var sum = 0;
+        // for(let i=0; i< arrayValue.length; i++){
+        //      if(arrayValue[i] > max){
+        //          max = arrayValue[i];
+        //      }
+        //      sum = sum + arrayValue[i];
+            
+        // }
+        // document.write(sum,"<br/>");
+        // document.write(max);
+
+        // Wap to find the largest of 3 given Integer
+        function largestOfThree(x,y,z){
+            var max = x;
+            if(y > max && z < y){
+                max = y;
+               return max;
+            }
+            else if( z > max && z > y){
+                max = z;
+                return max;
+            }
+
+        }
+        console.log(largestOfThree(3,5,4));
+    
+    </script>
+
+</body>
+</html>

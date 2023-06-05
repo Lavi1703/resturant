@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tar"></p>
+    <button onclick="stop()">Stop</button>
+    <button onclick="start()">Start</button>
+    <button onclick="restart()">Restart</button>
+    <script>
+     count = 0;
+    function counter(){
+      count++;
+      document.getElementById("tar").innerHTML = count;
+    }
+    function start(){
+        interval = setInterval(counter,1000);
+    }
+    function stop(){
+        clearInterval(interval);
+    }
+    function restart(){
+        clearInterval(interval);
+        count=0;
+        interval = setInterval(counter,1000);
+
+    }
+    </script>
+</body>
+</html>

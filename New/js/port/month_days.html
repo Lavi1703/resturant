@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var n = prompt("Enter a month");
+            if(n <= 0 || n > 12){
+                document.write("Invalid Input");
+            }
+            else{
+               if(n ==1||n==3||n==5||n==7||n==8||n==10||n==12){
+                document.write("31");
+               }
+               else if(n==2){
+                document.write("28");
+               }
+               else
+               document.write("30");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miss Number</title>
+</head>
+<body>
+    <script>
+        function getMissingNo(a, n) {
+           let total = Math.floor((n + 1) * (n + 2) / 2);
+           for (let i = 0; i < n; i++)
+           total -= a[i];
+           document.write(total) ;
+          }
+
+// Driver Code 
+             
+let arr = [ 1, 2, 3, 5 ];
+let N = arr.length;
+getMissingNo(arr, N);
+
+
+    </script>
+</body>
+</html>

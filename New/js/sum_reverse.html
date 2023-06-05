@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum and reverse</title>
+</head>
+<body>
+    <h3>Sum and Reverse</h3>
+     <script>
+      let n = 456;
+        let rev = 0;
+        sum = 0;
+        for (var i = n; Math.trunc(i) > 0; i /= 10) {
+        rev = ((rev * 10) + (Math.trunc(i) % 10));
+        sum = sum +  (Math.trunc(i) % 10) ;
+      }
+   document.write(rev +"<br/>");
+   document.write(sum);
+
+     </script>
+
+</body>
+</html>

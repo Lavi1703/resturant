@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Day and Time</title>
+</head>
+<body>
+    <script>
+        // var d = new Date();
+        // var day = d.getDay();
+        // var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        // var hour = d.getHours();
+        // var min = d.getMinutes();
+        // var sec = d.getSeconds();
+        // var period = "AM";
+        // if(hour == 0) {
+        //  hours = 12;
+        // }
+        // if(hour > 12){
+        //  hour = hour -12;
+        //  period = "PM";
+        // }
+        // hour= hour < 10 ? `0${hour}` : hour;
+        // min = min < 10 ? `0${min}` : min;
+        // sec = sec < 10 ? `0${sec}` : sec;
+        // console.log("Current Day is "+daylist[day],"Current Time is"+hour+":"+ min + ":" +sec);
+
+        //get Today Date
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; 
+        var yyyy = today.getFullYear();
+        if(dd<10) 
+        {
+          dd='0'+dd;
+        } 
+
+        if(mm<10) 
+        {
+          mm='0'+mm;
+        } 
+       today = mm+'-'+dd+'-'+yyyy;
+       console.log(today);
+       today = mm+'/'+dd+'/'+yyyy;
+       console.log(today);
+       today = dd+'-'+mm+'-'+yyyy;
+       console.log(today);
+       today = dd+'/'+mm+'/'+yyyy;
+       console.log(today);
+    </script>
+</body>
+</html>

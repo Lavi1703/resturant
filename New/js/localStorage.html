@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <script>
+        function clickMe() {
+          if(typeof(Storage) !== 'undefined'){
+            if(localStorage.countclick){
+                 localStorage.countclick = Number(localStorage.countclick)+1;
+            }
+            else{
+                localStorage.countclick = 1;
+            }
+            document.getElementById("pass").innerHTML = "clicked" + localStorage.countclick +"times";
+          }
+          else{
+            document.getElementById("pass").innerHTML ="sorry"
+          }
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="clickMe()">click</button>
+    <p id="pass"></p>
+    <!--     
+        // // do inspect and there is an option of application after that having an option of storage in that local and session storage
+        //    let impArray =['ginger','onion','ladyfinger'];
+   
+        //    //to set the localstorage item
+        //    localStorage.setItem('Name','Lavi');
+        //    localStorage.setItem('Name2','Barange');
+        //    localStorage.setItem('vegz',JSON.stringify(impArray)); // object to string
+        //    // to clear the localstorage item
+   
+        //    // localStorage.clear()
+   
+        //    //to clear a particular item
+        //    localStorage.removeItem('Name2')
+   
+        //   var name = JSON.parse(localStorage.getItem('vegz'));
+        //   // string to object
+        //   console.log(name);
+   
+        //   // when sending the data to  a web server a data is need to be a string that is why we use JSON.Stringify method to do so
+   
+        //   //defination of local and session storage 
+        //   // session will end as the session of any tab to window ends and the local storage session will never end even if we close the window or the tab
+   
+        //   if(typeof(Storage)!== 'undefined'){
+        //     localStorage.setItem('age','26')
+        //     document.getElementById('tar').innerHTML=localStorage.getItem('age')
+        //   }
+        //   else{
+        //    document.getElementById('tar').innerHTML = "sorry wrong entry"
+        //   }  -->
+
+</body>
+
+</html>

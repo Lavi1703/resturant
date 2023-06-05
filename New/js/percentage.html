@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+</head>
+<body>
+    <h3> Grade Division as per Percentage</h3>
+    <script>
+        var English = 70;
+        var Hindi = 72;
+        var comp = 83;
+        var maths = 63;
+        var science = 93;
+
+        var total = (English + Hindi + comp + maths + science);
+        console.log(total);
+        var per = (total /500 )* 100;
+        console.log(per);
+        if(per > 80){
+            document.write("A");
+        }
+         else if(per > 60 && per <= 80){
+            document.write("B");
+
+         }
+         else if(per > 45 && per <= 60){
+            document.write("C");
+         }
+         else
+         document.write("fail");
+    </script>
+</body>
+</html>

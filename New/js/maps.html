@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps in js</title>
+</head>
+<body>
+    <!-- Maps were included in js from es6 
+    we can use any type of key value pair-->
+    <script>
+        const myMap = new Map();
+       
+
+       const key1 = "myStr",
+        key2 = {},
+        key3 = function(){};
+
+        //  setting map value
+        myMap.set(key1 ,'This is a string');
+        myMap.set(key2 ,'This is a blank obj');
+        myMap.set(key3 ,'This is a empty function');
+        console.log(myMap);
+
+        // gettinga vlaue from a map
+       let value1 =  myMap.get(key1);
+       console.log(value1)
+       //get the size of map
+
+    console.log(myMap.size);
+
+    // you can loop using for.. of to get keys and values
+
+    for(let [key,value] of myMap){
+        console.log(key,value)
+    }
+// get only keys
+
+  for(let key of myMap.keys()){
+    console.log('key is',key)
+  }
+
+  // get only values
+
+  for(let value of myMap.values()){
+    console.log('value is',value)
+  }
+
+  // a map using for each loop
+  myMap.forEach(( value,key)=>{
+   console.log('key is',key);
+   console.log('value is',value);
+  })
+    </script>
+  
+
+</body>
+</html>

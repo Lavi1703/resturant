@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Program</title>
+</head>
+<body>
+    <script>
+      // WAP that first jan is sunday from 2014 to 2050
+      for(let i=2014; i<=2050;i++){
+        var date = new Date(i,0,1)
+       // console.log(date);
+        if(date.getDay()===0){
+            console.log("1st jan sunday",i);
+        }
+      }
+    </script>
+</body>
+</html>

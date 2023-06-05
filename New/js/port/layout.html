@@ -1,0 +1,86 @@
+<html>
+    <head>
+       <style>
+        body{
+            font-family:Arial, Helvetica;
+            background: slategray;
+            margin:0px;
+            padding: 0px;
+        }
+        #wrapper{
+          background:white;
+          width: 1000px;
+          border:1px solid black;
+          margin:0px auto;
+        }
+        #menu{
+         display: flex;
+         justify-content: flex-end;
+          background: #940d16;
+        }
+         #content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            background-color: black;
+           height: 400px;
+         }
+        .introduction{
+           text-align: center;
+          font-size:30px ;
+          color:white;
+         }
+         .small-desc{
+           color:#940d16;
+           text-align: center;
+         }
+        
+        #footer{
+          background: #940d16;
+          clear: both;
+          padding: 5px 10px;
+          text-align: center;
+        }
+        #menu ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        #menu li{
+            display: inline-block;
+
+        }
+        #menu li a{
+            display: block;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+        }
+       </style>
+    </head>
+     <body>
+        <div id="wrapper"> 
+            <div id="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">My work</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Client</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="content">
+               <div class="introduction">
+                 Hey I am Lavi 
+               </div>
+              <div class="small-desc">
+                a web developer
+              </div>
+            </div>
+           
+            <div id="footer">
+                I'm making this for the practise.
+            </div>
+        </div>
+     </body>
+</html>

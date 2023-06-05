@@ -1,0 +1,32 @@
+<!-- Reverse an Array in Groups of Given Size -->
+<html>
+    <head>
+
+    </head>
+<body>
+    <script>
+        function reverse(arr,N,k){
+            var length = arr.length;
+           for(let i=0;i<length;i+= k){
+             start = i;
+             end = Math.min(i+k-1,length-1);
+             while(start <= end){
+                var temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
+                start++;
+                end--;
+             }
+           }
+           return arr;
+         }
+         var arr =new Array(1,2,3,46,5,7,5);
+         var k=3;
+         var n = arr.length;
+         let arr1 = reverse(arr,n,k);
+         for(let i=0;i<n;i++){
+            document.write(arr1[i]," ")
+         }
+    </script>
+    </body>
+</html>

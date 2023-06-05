@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <p id="headig" class="abc"></p>
+    <script>
+        console.log("this is for event");
+        document.getElementById('heading').addEventListener
+        ("click",function(e){
+            let variable;
+            console.log("you have clcked the heading");
+            variable = e.target;
+            variable = e.target.className;
+            variable = Array.from(e.target.classList);// all list of the class
+            variable = e.target.id;
+            variable = e.offsetX;//element se related aapne kha click kara hai
+            variable = e.offsetY;
+            variable = e.clientX;// browser se related aapne kha click kiya hai
+            variable = e.clienty;// broweser se kitne dur click kiya
+
+
+        })
+        
+    </script>
+</body>
+</html>

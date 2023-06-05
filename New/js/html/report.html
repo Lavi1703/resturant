@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report card</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+       table{
+         margin: auto;
+       }
+        table td th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #report{
+            display: none;
+        }
+    </style>
+    <script>
+       $(document).ready(function(){
+        $("#click").click(function(){
+            $("#report").show()
+            var a = $("#name").val()
+            $("#resultName").text(a);
+             var sub1 = document.getElementById("data").value;
+             var sub2 = document.getElementById("networking").value;
+             var sub3 = document.getElementById("operating").value;
+             var sub4 = document.getElementById("it").value;
+             var sub5 = document.getElementById("se").value;
+
+             var sum = parseInt(sub1) + parseInt(sub2) + parseInt(sub3) + parseInt(sub4) + parseInt(sub5);
+
+             document.getElementById("resultMarks").innerHTML = sum;
+             document.getElementById("resultMarks").style.color = "blue"
+                
+             var per = (sum /500) *100;
+             document.getElementById("percentage").innerHTML = per;
+
+            if(per < 40)
+            {
+                $("#status").text("Fail").css("color","red");
+               
+            }
+            else{
+                $("#status").text("Pass").css("color","green");
+            }
+
+        });
+
+         $("#reset").click(function(){
+            $("input").val("");
+         })
+       });
+        
+    </script>
+</head>
+<body>
+    
+       
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                        
+                    </td>
+                    <td>
+                        <input type="text" id="name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="data">Data Structure</label>
+                        
+                    </td>
+                    <td>
+                        <input type="number" id="data" min="0" max="100" maxlength="2" size="2">
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <label for="networking">Networking</label>
+                        
+                    </td>
+                    <td>
+                        <input type="number" id="networking" min="0" max="100" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="operating">Operating System</label>
+                        
+                    </td>
+                    <td>
+                        <input type="number" id="operating" min="0" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="it">Information Technology</label>
+                        
+                    </td>
+                    <td>
+                        <input type="number" id="it" min="0" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="se">Software Enginerring</label>
+                        
+                    </td>
+                    <td>
+                        <input type="number" id="se" min="0" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td  style="text-align: center ;">
+                       <button id="click">Click</button>
+                    </td>
+                    <td  style="text-align: center ;">
+                        <button id="reset">Reset</button>
+                     </td>
+                </tr>
+            </table>
+    
+      
+            <table id="report" border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Total Marks</th>
+                    <th>Percentage</th>
+                    <th> Status</th>  
+                    <th>Action</th>                
+                </tr>
+                <tr>
+                    <td id="resultName"></td>
+                    <td id="resultMarks"></td>
+                    <td id="percentage"></td>
+                    <td id="status"></td>
+                    <td>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+               
+            </table>
+          
+            
+        
+    
+</body>
+</html>

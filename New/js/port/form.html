@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .wrapper{
+        display: flex;
+        margin: 0px auto;
+        width: 1000px;
+        }
+        .container{
+        display: flex;
+        flex-direction: column;
+        }
+        .container div{
+        margin-bottom: 10px;
+        }
+        label {
+        display: inline-block;
+        width: 110px;
+        color: #777777;
+       }
+       .card{
+        width:400px;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="container">
+        <div>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name">
+        </div>
+        <div>
+            <label for="Id">Id</label>
+            <input type="text" id="Id">
+        </div>
+        <div>
+            <label for="Nationality">Nationality:</label>
+            <input type="text" id="Nationality">
+        </div>
+        <div>
+            <label for="DOB">DOB:</label>
+            <input type="text" id="DOB">
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone">
+        </div>
+        <div>
+            <label for="doj">DOJ:</label>
+            <input type="text" id="doj">
+        </div>
+         
+          <button onclick="submit()">Submit</button>
+      </div>
+      <div class="card">
+          <div id="card_name"></div>
+          <div id="result"></div>
+      </div>
+    </div>
+
+    <script>
+     function submit(){
+      var name =  document.getElementById("Name").value;
+      
+      var id = document.getElementById("Id").value;
+
+      var Nationality = document.getElementById("Nationality").value;
+
+      var Dob = document.getElementById("DOB").value;
+      
+      var phone = document.getElementById("phone").value;
+
+      var doj = document.getElementById("doj").value;
+      
+      document.getElementById("card_name").innerHTML = "Name:" + name + "<br/>";
+         
+      document.getElementById("result").innerHTML = ("id is " + id + "<br/>"+  "Nationality is " + Nationality + "<br/>"+ "Date of Birth is " + Dob +"<br/>" + "mobile number " + phone + "<br/>" + "Date of Joining" + doj);
+     }
+    </script>
+</body>
+</html>

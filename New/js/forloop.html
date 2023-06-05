@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+</head>
+<body>
+    <script>
+        // initiliasation ;condition;updation
+        // for(let i=0;i<3;i++){
+        //   console.log(i);
+        // }
+        // let fri = ['Rohan','sanjeev','abc','ahjhv']
+        // for (let index = 0; index < fri.length; index++) {
+        //    console.log(fri[index]);
+           
+            
+        // }
+        // fri.forEach(function f(element){
+        //     console.log(element);
+        // })
+        
+        // for(element of fri){
+        //     console.log(element);
+        // }
+        let employee = {
+            name :"abc",
+            salary: 200000,
+            channel:"sdds"
+        }
+        // object in js
+
+        for(key in employee){
+            console.log(`The ${key} of employeee is ${employee[key]}`);
+        }
+        // while loop in js
+        let i=0;
+        while(i<4){
+            console.log("yes",i);
+            i++;
+        }
+
+        // do while loop
+        j = 34;
+        do{
+            console.log(i);
+            j++;
+        }while(j<4)
+    </script>
+</body>
+</html>

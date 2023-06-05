@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align2 -practise</title>
+    <script src="https://kit.fontawesome.com/3fbdc8d9a8.js" crossorigin="anonymous"></script>
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap.min.js"></script> 
+   
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 80vh;
+            }
+            .container{
+                width: 100%;
+                max-width: 800px;
+                
+            }
+            p{
+                text-align: center;
+            }
+            .main-wrapper{
+                width: 100%;
+                display: flex;
+            }
+            .left-wrapper{
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid gray;
+            }
+            .right-wrapper{
+                width: 70%;
+                margin-left: 17px;
+            }
+           th{
+            width: 20%;
+           }
+           
+           td{
+            width: 40%;
+           }
+           tr{
+            text-align: left;
+           }
+           div{
+            margin: 10px 0px;
+           }
+          .off-price{
+            
+            color: green;
+          }
+          .btn-primary{
+            background-color: #0F87FF;;
+            color:white;
+            border: 1px solid black;
+            padding: 6px 8px;
+            font-weight: 700;
+            border-radius: 3px;
+          }
+        </style>
+</head>
+<body>
+    <div class="container">
+      <p> Product Page</p>
+      <div class="main-wrapper">
+          <div class="left-wrapper">
+           <i class="fa-sharp fa-solid fa-5x fa-shirt"></i>
+          </div>
+          <div class="right-wrapper">
+            <div class="content">
+               Green Cotton Tshirt
+            </div>
+            <div class="gray-content">
+               Shirt
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="normal-text">
+               Rs. 400 <span style="text-decoration: line-through;">Rs590</span> <span class="off-price">50% 0ff</span>
+            </div>
+            <div class="normal-text">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, deserunt rerum tenetur consequuntur quae iusto adipisci, obcaecati aspernatur ex accusantium vero minus consequatur voluptate perferendis ratione at fuga laboriosam maxime?
+            </div>
+            <div>
+              <table>
+               <tr>
+                   <th>Color</th>
+                   <td>Green</td>
+               </tr>
+               <tr>
+                   <th>Availiability</th>
+                   <td>3 in stock</td>
+               </tr>
+               <tr>
+                   <th>selected size:</th>
+                   <td>
+                       <input type="radio" id="radio1">
+                       <label for="radio1">Small</label>
+                       <input type="radio" id="radio2">
+                       <label for="radio2">Medium</label>
+                       <input type="radio" id="radio3">
+                       <label for="radio3">Large</label>
+                   </td>
+               </tr>
+               <tr>
+                   <th>Quantity</th>
+                   <td>
+                         <select>
+                           <option> 1</option>
+                           <option> 2</option>
+                           <option>3</option>
+                         </select>
+                   </td>
+               </tr>
+   
+   
+             
+              </table>
+               <div>
+
+                   <button type="button" class="btn btn-primary">Buy Now</button>
+                   <button onclick="cart()" style="padding: 6px 8px;
+                   font-weight: 700;
+                   border-radius: 3px;">Add to Cart</button>
+               </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</body>
+</html>

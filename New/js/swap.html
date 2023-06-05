@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap</title>
+</head>
+<body>
+    <!-- <h3> Swaping 2 number using 3rd Variable</h3> -->
+    <h3>Without Using 3rd Variable</h3>
+
+    <script>
+         var value1= parseInt(prompt("Enter a number"));
+         var value2= parseInt(prompt("Enter 2nd number"));
+      document.write("Before swaping value1 is " + value1 + " value2 is " + value2 + "</br>");    
+    //     var temp;
+    //      temp = value2;
+    //      value2 = value1;
+    //      value1 = temp;
+
+    //  document.write("after swaping value1 is " + value1 + " value2 is " + value2 + "</br>");
+         
+       value1= value1 +value2;
+       value2 = value1 - value2;
+       value1 = value1 - value2;
+       document.write("after swaping value1 is " + value1 + " value2 is " + value2 + "</br>");
+
+    </script>
+</body>
+</html>
