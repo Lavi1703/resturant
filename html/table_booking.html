@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel_Booking</title>
+    <style>
+        * {
+            margin: 0px auto;
+
+        }
+
+        body {
+            background-image: url("1.jpg");
+        }
+
+        table {
+            text-align: center;
+
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        caption {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form>
+            <table border="1" cellpadding="0" cellspacing="0">
+                <caption>Table Booking </caption>
+                <tr>
+                    <th>Name</th>
+                    <td>
+                        <input type="text" placeholder="Name" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Email ID</th>
+                    <td>
+                        <input type="email" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Mobile Number</th>
+                    <td>
+                        <input type="text" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Date of Booking</th>
+                    <td>
+                        <input type="date" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th> Type of Table</th>
+                    <td>
+                        <select>
+                            <option></option>
+                            <option>Table for 2</option>
+                            <option>Table for 4</option>
+                            <option>Table for 6</option>
+                        </select>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <th> Gender </th>
+                    <td>
+                        <input type="radio" id="male" name="age">
+                        <label for="male"> Male</label>
+                        <input type="radio" id="female" name="age">
+                        <label for="female">Female</label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th> Garden Area</th>
+                    <td>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Place 1</label>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Place 2</label>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Place 3</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="SUBMIT">
+                        <input type="reset" value="RESET">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+
+</html>
